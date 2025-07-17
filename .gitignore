@@ -18,3 +18,5 @@ Latex
 *.svn 
 *.toc
 *.synctex.gz
+
+/build/*
