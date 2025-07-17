@@ -28,18 +28,19 @@ void build(vector<int> &a, int v, int tl, int tr){
 }
 
 int sum(int v, int tl, int tr, int l, int r) {
-  int sum = 0;
+  int ans = 0;
   if(l > r){
-    sum = 0;
+    ans = 0;
   }else if(l == tl && r == tr){
-    sum = t[v];
+    ans = t[v];
   }else{
     int tm = (tl + tr) / 2;
-    sum = sum(v * 2, tl, tm, min(r, tm));
-    sum += sum(v * 2 + 1, tm + 1, max(l, tm + 1), r);
+    ans = sum(v * 2, tl, tm, l, min(r, tm));
+    ans += sum(v * 2 + 1, tm + 1, tr, max(l, tm + 1), r);
   }
-  return sum;
+  return ans;
 }
+
 
 void update(int v, int tl, int tr, int pos, int new_val){
   if(tl == tr){
