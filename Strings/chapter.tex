@@ -1,5 +1,18 @@
 \section{Strings}
 \begin{multicols*}{2}
+	\includecpp{KMP}
+	{Nos permite buscar todas las ocurrencias de un patrón de un string.}
+	{$O(n)$}
+	{\begin{itemize}
+			\item Buscar un substring o patrón en un string.
+			\item Contar el número concurrencias de un patrón.
+			\item Conocer el número de substrings diferentes en una cadena.
+			\item Comprimir un string.
+			\item Construir o personalizar el autómata de acuerdo a la función prefijo.
+		\end{itemize}}
+	{./Strings}
+	{KMP.cpp}
+
 	\includecpp{Aho-Corasick}
 	{Nos permite buscar rápidamente múltiples patrones en un texto. El conjunto de patrones se denomina diccionario. El algoritmo construye un autómata de estados finitos basado en un trie (árbol de prefijos) y luego lo utiliza para procesar el texto.}
 	{$O(m*k)$ donde m es la longitud total de las cadenas y k el tamaño del alfabeto.}
