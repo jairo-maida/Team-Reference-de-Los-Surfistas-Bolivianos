@@ -1,10 +1,28 @@
-\section{Lorem ipsum}
-		\begin{multicols*}{2}
-			\includecpp{Código de ejemplo}
-			{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
-			{$O(nlog(n) + m^{2})$}
-			{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
-			{.}
-			{example_code.cpp}
-			
-		\end{multicols*}
+\section{Strings}
+\begin{multicols*}{2}
+	\includecpp{KMP}
+	{Nos permite buscar todas las ocurrencias de un patrón de un string.}
+	{$O(n)$}
+	{\begin{itemize}
+			\item Buscar un substring o patrón en un string.
+			\item Contar el número concurrencias de un patrón.
+			\item Conocer el número de substrings diferentes en una cadena.
+			\item Comprimir un string.
+			\item Construir o personalizar el autómata de acuerdo a la función prefijo.
+		\end{itemize}}
+	{./Strings}
+	{KMP.cpp}
+
+	\includecpp{Aho-Corasick}
+	{Nos permite buscar rápidamente múltiples patrones en un texto. El conjunto de patrones se denomina diccionario. El algoritmo construye un autómata de estados finitos basado en un trie (árbol de prefijos) y luego lo utiliza para procesar el texto.}
+	{$O(m*k)$ donde m es la longitud total de las cadenas y k el tamaño del alfabeto.}
+	{\begin{itemize}
+			\item Encontrar todas las cadenas de un conjunto dado en un texto.
+			\item Encontrar la cadena lexicográficamente más pequeña de una longitud dada que no coincida con ninguna cadena dada.
+			\item Encontrar la cadena más corta que contiene todas las cadenas dadas
+			\item Encontrar la cadena de longitud lexicográficamente más pequeña de longitud L que contiene K strings
+		\end{itemize}}
+	{./Strings}
+	{AhoCorasick.cpp}
+	
+\end{multicols*}
