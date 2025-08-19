@@ -1,7 +1,24 @@
 \section{Strings}
 \begin{multicols*}{2}
-	\subsection{Definición de prefijos, sufijos y substrings}
-	Hola
+	\subsection{Definición de prefijos, sufijos, substrings y subsecuencias}
+	{\begin{itemize}
+			\item Un substring es una secuencia consecutiva de caracteres en un string. Un string también es substring de si mismo.
+			\item Un string tiene $\frac{n \cdot (n+1)}{2}$ substrings.
+			\item Una subsecuencia es cualquier secuencia de caracteres de un string en su orden original.
+			\item Un prefijo es un substring que contiene el primer caracter de un string.
+			\item Un sufijo es un substring que contiene el último caracter de un string.
+		\end{itemize}}
+	
+	\includecpp{Hashing}
+	{La idea detrás del hash de strings es la siguiente: asignamos cada string a un entero y los comparamos en lugar de los strings. Esto nos permite reducir el tiempo de ejecución de la comparación de cadenas.}
+	{$O(n)$ para comparación y }
+	{\begin{itemize}
+			\item Algoritmo de Rabin-Karp para la coincidencia de patrones en un string en $O(n)$.
+			\item Calcular el número de substrings diferentes de una cadena en $O(n^2)$.
+			\item Calcular el número de substrings palindrómicas en una cadena.
+		\end{itemize}}
+	{./Strings}
+	{Hashing.cpp}
 	
 	\includecpp{KMP}
 	{Nos permite buscar todas las ocurrencias de un patrón de un string.}
