@@ -1,5 +1,8 @@
 \section{Strings}
 \begin{multicols*}{2}
+	\subsection{Definición de prefijos, sufijos y substrings}
+	Hola
+	
 	\includecpp{KMP}
 	{Nos permite buscar todas las ocurrencias de un patrón de un string.}
 	{$O(n)$}
@@ -12,9 +15,25 @@
 		\end{itemize}}
 	{./Strings}
 	{KMP.cpp}
-
+	
+	\includecpp{Z-Function}
+	{La función Z para un string es un arreglo de longitud $n$, donde el elemento en la posición $i$ es igual al
+		mayor número de caracteres que, comenzando desde la posición $i$, coinciden con los primeros caracteres de $s$.
+		En otras palabras, $z[i]$ es la longitud del substring más largo que es, al mismo tiempo, un prefijo de $s$ y un
+		prefijo del sufijo de $s$ que comienza en la posición $i$. Para $i$ = 0, siempre es 0.}
+	{$O(n)$}
+	{\begin{itemize}
+			\item Buscar un substring, concatenando $s = p + C + t$ siendo $C$ un caracter separador que no está en $p$ ni $t$.
+			      Nos da una complejidad de $O(length(s) + length(p))$.
+			\item Contar el número de substrings distintos en un string.
+			\item Comprimir un string
+		\end{itemize}}
+	{./Strings}
+	{ZFunction.cpp}
+	
 	\includecpp{Aho-Corasick}
-	{Nos permite buscar rápidamente múltiples patrones en un texto. El conjunto de patrones se denomina diccionario. El algoritmo construye un autómata de estados finitos basado en un trie (árbol de prefijos) y luego lo utiliza para procesar el texto.}
+	{Nos permite buscar rápidamente múltiples patrones en un texto. El conjunto de patrones se denomina diccionario.
+		El algoritmo construye un autómata de estados finitos basado en un trie (árbol de prefijos) y luego lo utiliza para procesar el texto.}
 	{$O(m*k)$ donde m es la longitud total de las cadenas y k el tamaño del alfabeto.}
 	{\begin{itemize}
 			\item Encontrar todas las cadenas de un conjunto dado en un texto.
