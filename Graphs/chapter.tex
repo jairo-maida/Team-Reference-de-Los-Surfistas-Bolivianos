@@ -12,11 +12,17 @@
 			{DFS.cpp}
 			
 			\includecpp{BFS}
-			{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
-			{$O(nlog(n) + m^{2})$}
-			{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
-			{.}
-			{example_code.cpp}
+			{Algoritmo para recorrer grafos que visita los nodos en amplitud, análogo a la forma en la que se expande un incendio: si un nodo está ``ardiendo'', sus vecinos arden después de manera simultanea.}
+			{$O(n + m)$}
+			{\begin{itemize}
+			  \item Encontrar el camino más corto en un grafo sin pesos 
+        \item Encontrar todas las componentes conexas en un grafo 
+        \item Encontrar el ciclo más corto conteniendo a un nodo origen en un grafo dirigido sin pesos
+        \item Verificar si una arista $(u, v)$ pertenece a uno de los caminos más cortos entre $a$ y $b$ con $d_{a}[u] + 1 + d_{b}[v] = d_{a}[b]$
+        \item Verificar si un nodo $v$ pertenece a uno de los caminos más cortos entre $a$ y $b$ con $d_{a}[v] + d_{b}[v] = d_{a}[b]$
+			\end{itemize}}
+			{./Graphs}
+			{BFS.cpp}
 			
 			\includecpp{Dijkstra}
 			{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
